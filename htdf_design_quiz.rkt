@@ -3,7 +3,7 @@
 #reader(lib "htdp-advanced-reader.ss" "lang")((modname htdf_design_quiz) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f ())))
 (require 2htdp/image)
 ;; Image Image -> Boolean
-;; Given two images returns true if first is larger than the second
+;; Given two images returns true only if first is larger than the second
 
 (check-expect (larger (square 50 "solid" "slateblue") (square 40 "solid" "slateblue")) true)
 (check-expect (larger (square 30 "solid" "slateblue") (square 40 "solid" "slateblue")) false)
